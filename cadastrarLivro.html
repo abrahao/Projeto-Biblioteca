@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastrar Livro</title>
+    <link href="estilo.css" rel="stylesheet" media="all" />
+</head>
+<body>
+
+		<h1 class="titulo_do_sistema"> SysLib </h1>
+	<nav class="menu1">
+		<a href="index.html"> Home </a> |
+		<a href="cadastrarLivro.html"> Cadastrar livro </a> |
+		<a href="#"> Consultar Livro </a>
+	</nav>
+	<main>
+		
+	    <form name="meu_form">
+	        <h1> Dados do Livro </h1>
+ 	
+    	    <p class="nome">
+            <input type="text" id="tituloid" placeholder="Livro" required="required" name="titulo" />
+            <label for="titulo">Nome</label>
+        	</p>
+        	
+        	<p class="autor">
+            <input type="text" id="autorid" placeholder="Autor" name="autor" />   
+            <label for="autor"> Autor </label>
+ 	        </p>
+
+			<p class="isbn">
+            <input type="text" id="isbnid" placeholder="ISBN" required="required" name="isbn" />
+            <label for="isbn"> ISBN </label>
+        	</p>
+
+        	<p class="submit">
+            <input type="submit" onclick="Enviar();" value="Enviar" />
+        </p>
+        </main> 
+    </form>
+	
+</body>
+</html>
